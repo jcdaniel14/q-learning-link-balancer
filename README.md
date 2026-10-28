@@ -2,7 +2,9 @@
 
 Prototype of a reinforcement learning agent that decides where to move traffic when internet exit links are saturated. I wrote it in 2021 for my master's thesis in data science at ESPOL (Ecuador). The thesis was about the automatic movement of public IP blocks between the international exits of an internet service provider, based on NetFlow traffic data.
 
-This repository holds only the learning model, trained on a small simulated environment. The production monitor and the network executor are not included.
+The agent was part of the final thesis and ran in production, with a collector that read BGP data from the routers. Its goal was to choose, among all the exits to the internet, the best one by bandwidth capacity and cost.
+
+This repository holds only the learning model, trained on a small simulated environment. The production monitor, the BGP collector and the network executor are not included.
 
 ## Model
 
